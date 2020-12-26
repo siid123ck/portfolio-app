@@ -1,0 +1,38 @@
+.animation{
+    background-color: brown;
+    width: 90hv;
+    height: 120vh;
+    // padding: 10rem 2rem;
+}
+
+.carousel{
+    width: 400%;
+    &_container{
+    display: flex;
+    transform: translateX(-33%);
+    }
+
+    &_item{
+     flex-basis: 100%;
+    }
+
+    &_btn{
+        position: absolute;
+        top: 50%;
+        background-color: white;
+        &--left{
+            
+        }
+        &--right{
+
+        }
+    }
+
+    &_nav{
+        &-indicator{
+            &-current{
+
+            }
+        }
+    }
+}

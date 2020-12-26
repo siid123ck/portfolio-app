@@ -1,0 +1,171 @@
+.header{
+    display: flex;
+    height: 5rem;
+    padding: 2rem 1rem 5rem 1rem;
+}
+.logo{
+    margin-right: auto;
+}
+
+.menu{
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    &:hover &_icon div:nth-child(1){
+        cursor: pointer;
+       transform: translateY(-1px);
+    }
+    &:hover &_icon div:nth-child(3){
+       transform: translateY(1px);
+       cursor: pointer;
+    }
+     &_icon{
+         margin-left: 1rem;
+         padding-top: .4rem;
+         position: relative;
+         &-item{ 
+             background-color: black;
+             height: .4rem;
+             width: 3rem;
+             transition: all .3s cubic-bezier(0.19, 1, 0.22, 1);
+            //  &:not(:last-child){
+            //      margin-bottom: .4rem;
+            //  }
+            &:nth-child(2){
+                margin: .6rem 0;
+            }
+         }
+     }
+}
+
+//navigation 
+.nav{
+    list-style: none;
+    position: fixed;
+    z-index: 23;
+    height: 100vh;
+    top: 80%;
+    left: 50%;
+    opacity: 0;
+    width: 0;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    &_background{
+        width: 5rem;
+        height: 5rem;
+        background-color: rgba(black, .3);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        display: none;
+        transition: all .6s;
+        // position: relative;
+        // z-index: 5;
+    }
+    &-toggler{
+        display: none;
+    }
+    &-toggler:checked ~ &_background{
+    transform: scale(50);
+    
+    display: block;
+    }
+    &-toggler:checked ~ &_background{
+    transform: scale(80);
+    }
+    &-toggler:checked ~ &{
+        opacity: 1;
+        width: 100%;
+    }
+    &_item{
+        font-size: 3rem;
+        font-weight: 100;
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
+        &_link:active, &_link:link{
+            color: white;
+            text-decoration: none;
+            padding: .5rem 1rem;
+            transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: inline-block;
+            background-image: linear-gradient(135deg, transparent 0%, transparent 50%, #fff 50%);
+            background-size: 270%;
+            &:hover{
+                cursor: pointer;
+                color: black;
+                background-position: 100%;
+            }
+        }
+    }
+
+}
+
+//navigation toggler
+
+
+
+.nav-toggler:checked ~ .menu_icon div:nth-child(2){
+    display: none;
+    }
+.nav-toggler:checked ~ .menu_icon div:nth-child(1){
+   transform: rotate(135deg);
+   position: absolute;
+   top: 1rem;
+
+    z-index: 22;
+    }
+.nav-toggler:checked ~ .menu_icon div:nth-child(3){
+    transform: rotate(-135deg);
+    position: absolute;
+    top: 1rem;
+    z-index: 22;
+    }
+
+    //logo
+    .logo{
+        padding: 1rem;
+        display: flex;
+      &_main{
+         margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+      }
+        &_circle{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           font-size: 2rem;
+           font-weight: 700; 
+           height: 5rem;
+           width: 5rem;
+           display: block;
+         & i{
+             width: 3.5rem;
+             height: 2px;
+             background-color: black;
+             display: block;
+             margin-left: 2rem;
+             margin-top: .7rem;
+         }
+        }
+        &_heading{
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+        }
+    &_title{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        & h1{
+        margin: 0;
+        }
+    }
+}
