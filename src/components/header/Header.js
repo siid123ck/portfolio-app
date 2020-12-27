@@ -10,8 +10,8 @@ export default function Header(){
                   <span className="logo_heading">sharma</span>
               </div>
               <div className="logo_title">
-                  <h1>Siid sharma</h1>
-                  <span>web developer</span>
+                  <h1>Siid Sharma</h1>
+                  <span>web Developer</span>
               </div>
             </div>
             <div className="menu">  

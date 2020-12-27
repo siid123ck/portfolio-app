@@ -1,6 +1,6 @@
 .header{
     display: flex;
-    height: 5rem;
+    height: 8vh;
     padding: 2rem 1rem 5rem 1rem;
 }
 .logo{
@@ -54,29 +54,29 @@
     &_background{
         width: 5rem;
         height: 5rem;
-        background-color: rgba(black, .3);
+        background-color: rgba(black, .9);
         position: absolute;
         top: 0;
+        z-index: 3;
         left: 50%;
         display: none;
         transition: all .6s;
-        // position: relative;
-        // z-index: 5;
+    
     }
     &-toggler{
         display: none;
     }
     &-toggler:checked ~ &_background{
-    transform: scale(50);
-    
+    transform: scale(80);
     display: block;
     }
-    &-toggler:checked ~ &_background{
-    transform: scale(80);
-    }
+    // &-toggler:checked ~ &_background{
+    // transform: scale(80);
+    // }
     &-toggler:checked ~ &{
         opacity: 1;
         width: 100%;
+        color: white;
     }
     &_item{
         font-size: 3rem;
@@ -110,16 +110,19 @@
     display: none;
     }
 .nav-toggler:checked ~ .menu_icon div:nth-child(1){
-   transform: rotate(135deg);
+   transform: rotate(45deg);
    position: absolute;
    top: 1rem;
-
-    z-index: 22;
+   right: 1rem;
+   background-color: white;
+   z-index: 22;
     }
 .nav-toggler:checked ~ .menu_icon div:nth-child(3){
-    transform: rotate(-135deg);
+    transform: rotate(-45deg);
     position: absolute;
     top: 1rem;
+    right: 1rem;
+    background-color: white;
     z-index: 22;
     }
 
