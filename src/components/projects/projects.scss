@@ -19,7 +19,7 @@
             height: 100%;
             width: 100%;
             position: absolute;
-            top: 0;left: 0;
+            // top: 0;left: 0;
             backface-visibility: hidden;
             overflow: hidden;
             transition: all .3s;
@@ -41,4 +41,27 @@
             }
         }
     }
+}
+
+//addtional elements
+.new{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    position: absolute;
+    width: 5rem;
+    background-color: black;
+    height: 5rem;
+    border-radius: 50%;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    z-index: 344;
+   text-align: center;
+   border: 3px solid white;
+   
+   & strong{
+       color: white;  
+       transform: translate(1rem, 1rem); 
+       vertical-align: middle;
+   }
 }

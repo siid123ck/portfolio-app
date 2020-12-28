@@ -1,0 +1,82 @@
+.contact{
+    &_main{
+        background-color: rgb(245, 245, 245);
+        padding: 3rem 2rem;
+    }
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    @import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Righteous&display=swap');
+    font-family: 'Righteous', cursive;
+
+    &_info{
+        display: flex;
+        flex-direction: column;
+        &-item{
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            
+            // display: flex;
+            // justify-content: center;
+            & span{
+                margin-right: 1rem;
+                grid-column: 1/span 2;
+                margin-bottom: 2rem;
+                & i{
+                    font-size: 1.5rem;
+                    margin-right: .5rem;
+                    &:hover{
+                        font-size: inherit;
+                    }
+                }
+            }
+            & a{
+                grid-column: 3/span 4;
+                text-align-last: left;
+                text-decoration: none;
+                color: inherit;
+                text-transform: lowercase;
+               
+                &:hover{
+                    color: rgba(0, 0, 0, 0.561);
+                    text-decoration: underline;
+                }
+                
+            }
+        }
+    }
+
+    &_media{
+        &-item{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 2rem;
+            //icons styles
+    & .fa{
+    // font-size: 2.5rem;
+    color: white;
+    border-radius: 50%;
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+       transform: scale(1.1);
+    }
+    &-facebook{   
+       background-color: #3b5999;
+    }
+    &-twitter{
+       background-color: #55acee;
+    }
+    &-linkedin{
+       background-color: #0077B5;
+    }
+    &-instagram{
+       background-color: #e4405f;
+    }
+ }
+        }
+    }
+}
