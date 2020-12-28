@@ -3,3 +3,31 @@
    display: flex;
    flex-direction: column;
 }
+
+
+.tail{
+   text-transform: uppercase;
+   &::after{
+      content: '';
+      display: block;
+      height: 2px;
+      text-align: center;
+      margin: 0 auto;
+      background-color: black;
+      width: 100%;
+   }
+   &-xsm::after{
+      width: 5rem;
+   }
+   &-sm::after{
+      width: 10rem;
+   }
+   &-md::after{
+      width: 15rem;
+   }
+   &-sm-white::after{
+      width: 7rem;
+      background-color: white;
+   }
+   
+}

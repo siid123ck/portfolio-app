@@ -27,10 +27,10 @@ export default function Header(){
                 </label>
                 <div className="nav_background" />
                 <ul className="nav" >
-                 <li className="nav_item"><a className="nav_item_link" href="#">home</a></li>
-                 <li className="nav_item"><a className="nav_item_link" href="#">about</a></li>
-                 <li className="nav_item"><a className="nav_item_link" href="#">projects</a></li>
-                 <li className="nav_item"><a className="nav_item_link" href="#">contact</a></li>
+                 <li className="nav_item"><a className="nav_item_link" href="www.google.com">home</a></li>
+                 <li className="nav_item"><a className="nav_item_link" href="www.google.com">about</a></li>
+                 <li className="nav_item"><a className="nav_item_link" href="www.google.com">projects</a></li>
+                 <li className="nav_item"><a className="nav_item_link" href="www.google.com">contact</a></li>
                 </ul>
             </div>
         </div>

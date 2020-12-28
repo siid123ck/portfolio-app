@@ -1,6 +1,44 @@
+
+
+//list items
+.list{
+    list-style: none;
+    line-height: 2;
+    font-size: 110%;
+    &-skill{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+  
+      &-item{
+          text-align: left;
+          text-transform: uppercase;
+          &-experience{
+              text-transform: capitalize;
+          }
+          &-tools{   
+              text-align: left;
+              margin-left: 30%;
+          }
+          &::before{
+              content: "";
+              background-color: white;
+              width: .5rem; 
+              height: .5rem;
+              margin-right: 1rem;
+              display: inline-block;
+              border: 5px solid rgba(128, 128, 128, 0.616);
+              border-radius: 50%;
+              vertical-align: middle;
+          }      
+      }
+  }
+
+//   aboutme
 .about_me{
     padding: 3rem 0;
     display: grid;
+    margin-top: -1rem;
     grid-template-columns: repeat(12, 1fr);
     background-color: rgb(241, 241, 241);
     // color: white;
@@ -14,24 +52,26 @@
         line-height: 2;
     }
     &-education{
-        grid-column: 9/span 3;
-        &_list{
-          list-style: none;
-            &-item{
-                text-align: left;
-                text-transform: uppercase;
-                &::before{
-                    content: "";
-                    background-color: white;
-                    width: .5rem; 
-                    height: .5rem;
-                    margin-right: 1rem;
-                    display: inline-block;
-                    border: 5px solid rgba(128, 128, 128, 0.616);
-                    border-radius: 50%;
-                    vertical-align: middle;
-                }      
-            }
-        }
+        grid-column: 9/span 3;       
     }
+}
+
+//skill
+.skill{
+    text-transform: uppercase;
+    margin-top: -2rem;
+    line-height: 1.7;
+    padding: 3rem 2rem;
+    background-color: rgb(251, 251, 251);
+    @import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Righteous&display=swap');
+    font-family: 'Righteous', cursive;
+}
+
+.experience{
+    background-color: rgb(246, 246, 246);
+    padding: 3rem 5rem;
+    @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Hanalei+Fill&family=Righteous&display=swap');
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: 'Amiri', serif;
 }

@@ -1,15 +1,28 @@
 import React from 'react';
+import Button from '../costume-button/Button';
+import PROJECT_DATA from '../project-data/project_data';
 import "./projects.scss";
-
+console.log(PROJECT_DATA)
 export default function Project() {
     return (
-        <div className="projects">
-           <div className="project-item">1</div>
-           <div className="project-item">2</div>
-           <div className="project-item">3</div>
-           <div className="project-item">4</div>
-           <div className="project-item">5</div>
-           <div className="project-item">6</div>
+        <div className="project">
+            {PROJECT_DATA.map(p=>(
+           <div key={p.id} className="project-item">
+               <div className="project-item-card project-item-card-front">
+                   <img src={p.imgUrl} alt={p.title} />
+               </div>
+               <div className="project-item-card project-item-card-back">
+                   <h2 className="tail  tail-sm-white">tools</h2>
+                   <ul className="list list-tools">
+                       {p.tools.map((item,index)=>(
+                           <li key={index} className="list-item list-item-tools">{item}</li>
+                       ))}
+                   </ul>
+                   <Button btn="view website" btn_style="btn btn--white"/>
+               </div>
+           </div>
+         ))}
+           
         </div>
     )
 }
