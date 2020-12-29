@@ -51,7 +51,10 @@
             display: grid;
             grid-template-columns: auto auto;
             grid-gap: 2rem;
-            //icons styles
+            & a{
+                text-decoration: none;
+            }
+     //icons styles
     & .fa{
     // font-size: 2.5rem;
     color: white;
@@ -78,5 +81,17 @@
     }
  }
         }
+    }
+}
+
+//form
+.contact_form{
+    @import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Righteous&display=swap');
+    font-family: 'Righteous', cursive;
+    &_heading{
+        padding: 3rem 2rem;
+    }
+    & Button{
+        font-size: 1.5rem;
     }
 }

@@ -1,0 +1,44 @@
+.form{
+    margin: 0 auto;
+    width: 80%;
+    text-transform: uppercase;
+    &-group{
+        margin: 0 auto;
+        width: 60%;
+        &:not(:last-child){
+            margin-bottom: 2rem;
+            // display: flex;
+            // align-items: center;
+            // flex-direction: column;
+        }
+    }
+
+    &-input{
+        background-color: transparent;
+        width: 100%;
+        padding: 1rem 2rem;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.797);
+        &:focus{
+            border-bottom: 3px solid rgb(30, 128, 0);
+            outline: none;
+            box-shadow: 0 .5rem 1rem rgba(black,  .2);
+            &:invalid{
+                border-bottom: 3px solid rgb(255, 94, 0);
+            }
+        }
+        &::placeholder{
+            text-transform: uppercase;
+        }
+        &:placeholder-shown + .form-label{
+            display: none;
+            opacity: 0;
+        }
+    }
+
+    &-label{
+       display: block;
+       text-align: left;
+       margin: 1rem;
+    }
+}
