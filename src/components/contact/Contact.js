@@ -3,7 +3,7 @@ import "./contact.scss";
 import Input from "../input-fom/Input";
 import Button from "../costume-button/Button"
 
-export default function Contact({changeHandler, value}) {
+export default function Contact({changeHandler, ...others}) {
     return (
      <div className="contact_main">
        <h1 className="contact_heading">Get in touch with me</h1>
@@ -33,11 +33,13 @@ export default function Contact({changeHandler, value}) {
         </div>
       <h1 className="contact_form_heading">fill up the form to contact me</h1>  
      <div className="contact_form">
-     <form className="form" action="#">
-      <Input onChange={changeHandler} value={value}
+     <form className="form" action="#" onSubmit={others.submitHandler}>
+      <Input changeHandler={changeHandler} value={others.name}
        name="name" label="name" id="name" placeholder="full name" type="text" className="form-input"  />
-      <Input name="password" label="password" id="password" type="password" placeholder="password" className="form-input" />
-      <Input name="email" label="email" id="email" placeholder="your email" type="email"  className="form-input"/>
+      <Input changeHandler={changeHandler} value={others.password}
+       name="password" label="password" id="password" type="password" placeholder="password" className="form-input" />
+      <Input changeHandler={changeHandler} value={others.email}
+      name="email" label="email" id="email" placeholder="your email" type="email"  className="form-input"/>
       <Button btn="submit" type="btn" btn_style="btn btn--black"  />
       </form>
      </div>
