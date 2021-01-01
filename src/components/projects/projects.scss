@@ -2,13 +2,29 @@
     padding: 3rem 2rem;
     display: grid;
     grid-gap: 2rem ;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    // grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr)) ;
+    grid-template-columns: repeat(3, 1fr) ;
+    @media only screen and (max-width: 800px) {
+       grid-template-columns: repeat(2, 1fr);
+     }
+
+     @media only screen and (max-width:600px){
+         grid-template-columns: auto;
+     }
+    // grid-template-rows: repeat(2, 1fr);
     &-item{
         height: 40rem;
         padding: 0;
         width: 100%;
         position: relative;
+
+        @media only screen and (max-width:1000px){
+            height: 35rem;
+        }
+        @media only screen and (max-width:800px){
+            height: 30rem;
+        }
+
         &:hover &-card-back{
             transform: rotateY(0);
         }
@@ -55,7 +71,7 @@
     top: 1rem;
     right: 1rem;
     padding: 1rem;
-    z-index: 344;
+    z-index: 3;
    text-align: center;
    border: 3px solid white;
    

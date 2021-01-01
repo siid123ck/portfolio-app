@@ -11,6 +11,7 @@ export default function Project() {
                <div className="project-item-card project-item-card-front">
                    <img src={p.imgUrl} alt={p.title} />
                    <span className={p.altr?"new":""}>
+
                        <strong>{p.altr}</strong>
                    </span>
                </div>

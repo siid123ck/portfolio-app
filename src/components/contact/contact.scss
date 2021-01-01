@@ -4,14 +4,21 @@
         padding: 3rem 2rem;
     }
     text-transform: uppercase;
-    display: flex;
     justify-content: space-around;
     @import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Righteous&display=swap');
     font-family: 'Righteous', cursive;
+    display: flex;
 
+    @media only screen and (max-width:600px){
+        flex-direction: column;
+    }
+    
     &_info{
         display: flex;
         flex-direction: column;
+        @media only screen and (max-width:600px){
+            align-items: center;
+        }
         &-item{
             display: grid;
             grid-template-columns: repeat(7, 1fr);
@@ -49,8 +56,12 @@
     &_media{
         &-item{
             display: grid;
-            grid-template-columns: auto auto;
             grid-gap: 2rem;
+            grid-template-columns: auto auto; 
+            @media only screen and (max-width:600px){
+              display: flex;
+              justify-content: center;
+            }         
             & a{
                 text-decoration: none;
             }
@@ -89,7 +100,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Righteous&display=swap');
     font-family: 'Righteous', cursive;
     &_heading{
-        padding: 3rem 2rem;
+        padding-top: 7rem;
     }
     & Button{
         font-size: 1.5rem;

@@ -7,11 +7,12 @@ export default function Header(){
             <div className="logo">
                 <div className="logo_main">
                   <span className="logo_circle">Siid <i></i> </span>
-                  <span className="logo_heading">sharma</span>
+                  <span className="logo_heading">Sharma</span>
               </div>
               <div className="logo_title">
                   <h1>Siid Sharma</h1>
-                  <span>web Developer</span>
+                  <span>Web Developer</span> 
+                  <img src={process.env.PUBLIC_URL + "/logo192.png"} alt="jj" width="20px" height="25px"/>
               </div>
             </div>
             <div className="menu">  

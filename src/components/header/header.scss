@@ -43,7 +43,7 @@
 .nav{
     list-style: none;
     position: fixed;
-    z-index: 23;
+    z-index: 63;
     height: 100vh;
     top: 80%;
     left: 50%;
@@ -51,24 +51,24 @@
     width: 0;
     transform: translate(-50%, -50%);
     padding: 1rem;
-    transition: all .3s;
+    transition: all .2s ease-out;
     &_background{
         width: 5rem;
         height: 5rem;
         background-color: rgba(black, .9);
         position: absolute;
         top: 0;
-        z-index: 3;
+        z-index: 30;
         left: 50%;
         display: none;
-        transition: all 1s;
+        // transition: all 3s ease-out;
     
     }
     &-toggler{
         display: none;
     }
     &-toggler:checked ~ &_background{
-    transform: scale(80);
+    transform: scale(280);
     display: block;
     }
     // &-toggler:checked ~ &_background{
@@ -89,7 +89,7 @@
             color: white;
             text-decoration: none;
             padding: .5rem 1rem;
-            transition: all .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: all .3s ease-in;
             display: inline-block;
             background-image: linear-gradient(135deg, transparent 0%, transparent 50%, #fff 50%);
             background-size: 270%;
@@ -117,7 +117,7 @@
    top: 1rem;
    right: 1rem;
    background-color: white;
-   z-index: 22;
+   z-index: 52;
     }
 .nav-toggler:checked ~ .menu_icon div:nth-child(3){
     transform: rotate(-45deg);
@@ -125,7 +125,7 @@
     top: 1rem;
     right: 1rem;
     background-color: white;
-    z-index: 22;
+    z-index: 52;
     }
 
     //logo
