@@ -2,11 +2,12 @@ import React from 'react';
 import "./about_me.scss";
 
 export default function AboutMe() {
-    return ( <div>
+    return ( <div className="about_section" id="aboutme">
         <div className="about_me">
            <div className="about_me-intro">
                <h2 className="tail tail-sm">About me</h2>
                <p>Full stack developer with hands-on experience of designing, developing, and implementing applications and solutions using a range of technologies and programming languages. Seeking to leverage broad development experience in a challenging role as front-end developer.</p>
+               {/* <span><a href="resume.pdf">download resume</a></span> */}
            </div>
            <div className="about_me-education">
                <h2 className="tail tail-sm">education</h2>

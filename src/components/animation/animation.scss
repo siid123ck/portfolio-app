@@ -10,7 +10,6 @@
     overflow: hidden;
     &_container{
     width: 300%;
-    position: relative;
     display: flex;
     transition: all 3s;
     &-1{
@@ -25,6 +24,11 @@
      height: 78vh; 
      width: 100%;  
      flex-basis: 100%;
+     position: relative;
+    &-1{
+        background-size: cover;
+        background-image: url("https://images.pexels.com/photos/257923/pexels-photo-257923.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2500");
+    }
 
      & img{  
         //  object-fit: cover;
@@ -35,7 +39,41 @@
 
      &_caption{
          position: absolute;
+         width: 30%;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
          top: 50%;
+         right: 5%;
+         transform: translateY(-50%);
+         &-2{
+             left: 5%;
+             & h4{
+                 color: white;
+                 font-size: 1.8rem !important;
+             }
+         }
+         &-3{
+             left: 50%;
+             transform: translate(-40%, -50%);
+         }
+         &_header{
+             background-color: grey;
+             width: fit-content;
+             margin: 0 auto;
+             color: white;
+             padding: 1rem;
+             border-radius: 10%;
+             margin-bottom: 2rem;
+         }
+         & h4{
+             font-size: 1.4rem;
+             line-height: 1.8;
+             letter-spacing: 1px;
+            font-family: 'Nunito', sans-serif;
+            text-transform: capitalize;
+            @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Redressed&display=swap');
+         }
      }
     }
 

@@ -7,11 +7,11 @@ export default function Project() {
     return (
         <div className="project">
             {PROJECT_DATA.map(p=>(
-           <div key={p.id} className="project-item">
+           <div key={p.id} className="project-item" id="projects">
                <div className="project-item-card project-item-card-front">
                    <img src={p.imgUrl} alt={p.title} />
+                       <h3 className="project_heading">{p.title}</h3>
                    <span className={p.altr?"new":""}>
-
                        <strong>{p.altr}</strong>
                    </span>
                </div>

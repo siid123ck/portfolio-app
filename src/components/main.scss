@@ -1,3 +1,4 @@
+@import "variables.scss";
 .main{
    font-size: 1.6rem;
    display: flex;
@@ -9,6 +10,7 @@
 
 h1, h2, h3, h4{
    text-transform: uppercase;
+   color: $color;
 }
 
 h4{

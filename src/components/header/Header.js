@@ -12,7 +12,7 @@ export default function Header(){
               <div className="logo_title">
                   <h1>Siid Sharma</h1>
                   <span>Web Developer</span> 
-                  <img src={process.env.PUBLIC_URL + "/logo192.png"} alt="jj" width="20px" height="25px"/>
+                  {/* <img src={process.env.PUBLIC_URL + "/logo192.png"} alt="jj" width="20px" height="25px"/> */}
               </div>
             </div>
             <div className="menu">  

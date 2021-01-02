@@ -5,9 +5,9 @@ import Button from "../costume-button/Button"
 
 export default function Contact({changeHandler, ...others}) {
     return (
-     <div className="contact_main">
+     <div className="contact_main"  style={{backgroundImage: `linear-gradient(to right bottom, rgba(245, 245, 245, 0.809),rgba(245, 245, 245, 0.809)) ,url(${process.env.PUBLIC_URL + "/img/contact.jpg"})`}}>
        <h1 className="contact_heading">Get in touch with me</h1>
-        <div className="contact">
+        <div className="contact" id="contactme">
             <div className="contact_info">
                 <h2 className="contact_info-heading">contact information</h2>
                 <div className="contact_info-item">
@@ -40,6 +40,8 @@ export default function Contact({changeHandler, ...others}) {
        name="password" label="password" id="password" type="password" placeholder="password" className="form-input" />
       <Input changeHandler={changeHandler} value={others.email}
       name="email" label="email" id="email" placeholder="your email" type="email"  className="form-input"/>
+      <Input changeHandler={changeHandler} value={others.message}
+      name="message" label="message" id="message" placeholder="your message" type="text"  className="form-input form-input-textarea"/>
       <Button btn="submit" type="btn" btn_style="btn btn--black"  />
       </form>
      </div>
