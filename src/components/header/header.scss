@@ -1,7 +1,9 @@
+@import "../variables.scss";
 .header{
     display: flex;
     height: 8vh;
     padding: 2rem 1rem 5rem 1rem;
+    background-color: $primary-color-3;
 }
 .logo{
     margin-right: auto;
@@ -25,7 +27,7 @@
          padding-top: .4rem;
          position: relative;
          &-item{ 
-             background-color: black;
+             background-color: $text-color;
              height: .4rem;
              width: 3rem;
              transition: all .3s cubic-bezier(0.19, 1, 0.22, 1);
@@ -55,7 +57,7 @@
     &_background{
         width: 5rem;
         height: 5rem;
-        background-color: rgba(black, .9);
+        background-color: rgba($secondary-color-3, .9);
         position: absolute;
         top: 0;
         z-index: 30;
@@ -77,7 +79,8 @@
     &-toggler:checked ~ &{
         opacity: 1;
         width: 100%;
-        color: white;
+        background-color: rgba($secondary-color-3, .95);
+        color: $white;
     }
     &_item{
         font-size: 3rem;
@@ -86,16 +89,16 @@
             margin-bottom: 2rem;
         }
         &_link, &_link:active, &_link:link{
-            color: white;
+            color: $white;
             text-decoration: none;
             padding: .5rem 1rem;
             transition: all .3s ease-in;
             display: inline-block;
-            background-image: linear-gradient(135deg, transparent 0%, transparent 50%, #fff 50%);
+            background-image: linear-gradient(135deg, transparent 0%, transparent 50%, $white 50%);
             background-size: 270%;
             &:hover{
                 cursor: pointer;
-                color: black;
+                color: $secondary-color-3;
                 background-position: 100%;
                 transform: translateX(1rem);
             }
@@ -116,7 +119,7 @@
    position: absolute;
    top: 1rem;
    right: 1rem;
-   background-color: white;
+   background-color: $white;
    z-index: 52;
     }
 .nav-toggler:checked ~ .menu_icon div:nth-child(3){
@@ -124,7 +127,7 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background-color: white;
+    background-color: $white;
     z-index: 52;
     }
 
@@ -136,7 +139,7 @@
          margin-right: auto;
         display: flex;
         flex-direction: column;
-        border: 2px solid black;
+        border: 2px solid $text-color;
         height: 7rem;
         width: 7rem;
         border-radius: 50%;
@@ -154,7 +157,7 @@
          & i{
              width: 3.5rem;
              height: 2px;
-             background-color: black;
+             background-color: $text-color;
              display: block;
              margin-left: 2rem;
              margin-top: .7rem;

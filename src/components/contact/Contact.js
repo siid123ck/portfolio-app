@@ -5,7 +5,7 @@ import Button from "../costume-button/Button"
 
 export default function Contact({changeHandler, ...others}) {
     return (
-     <div className="contact_main"  style={{backgroundImage: `linear-gradient(to right bottom, rgba(245, 245, 245, 0.809),rgba(245, 245, 245, 0.809)) ,url(${process.env.PUBLIC_URL + "/img/contact.jpg"})`}}>
+     <div className="contact_main" >
        <h1 className="contact_heading">Get in touch with me</h1>
         <div className="contact" id="contactme">
             <div className="contact_info">

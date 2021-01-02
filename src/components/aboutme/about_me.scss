@@ -1,5 +1,5 @@
 
-
+@import "../variables";
 //list items
 .list{
     list-style: none;
@@ -28,12 +28,12 @@
           }
           &::before{
               content: "";
-              background-color: white;
+              background-color: $white;
               width: .5rem; 
               height: .5rem;
               margin-right: 1rem;
               display: inline-block;
-              border: 5px solid rgba(128, 128, 128, 0.616);
+              border: 5px solid rgba($secondary-color-3, 0.616);
               border-radius: 50%;
               vertical-align: middle;
           }      
@@ -42,13 +42,13 @@
 
 //   aboutme
 .about_me{
-    background-image: linear-gradient(to right bottom, rgba(241, 241, 241, .82), rgba(241, 241, 241, .81) ), url("https://images.pexels.com/photos/936094/pexels-photo-936094.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2500");
+    background-image: linear-gradient(to right bottom, rgba($primary-color-1, .82), rgba($primary-color-1, .81) ), url("https://images.pexels.com/photos/936094/pexels-photo-936094.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2500");
     background-size: cover;
     padding: 3rem 0;
     display: grid;
     margin-top: -1rem;
     grid-template-columns: repeat(12, 1fr);
-    // background-color: rgb(241, 241, 241);
+    // background-color: rgb($light-grey-1);
     // color: white;
     @import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap');
     font-family: 'Hanalei Fill', cursive;  
@@ -83,18 +83,18 @@
     margin-top: -2rem;
     line-height: 1.7;
     padding: 3rem 2rem;
-    // background-color: rgb(251, 251, 251);
+    // background-color: rgb($primary-color-3);
     background-size: cover;
-    background-image: linear-gradient(to right bottom, rgba(251, 251, 251, 0.422),rgba(251, 251, 251, 0.424) ),
+    background-image: linear-gradient(to right bottom, rgba($primary-color-3, 0.422),rgba($primary-color-3, 0.424) ),
      url("https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2500");
     @import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Righteous&display=swap');
     font-family: 'Righteous', cursive;
 }
 
 .experience{
-    // background-color: rgb(246, 246, 246);
+    // background-color: rgb($primary-color-2);
     background-size: cover;
-    background-image: linear-gradient(to right bottom, rgba(246, 246, 246, 0.712),rgba(246, 246, 246, 0.781) ),
+    background-image: linear-gradient(to right bottom, rgba($primary-color-2, 0.712),rgba($primary-color-2, 0.781) ),
     url("https://images.pexels.com/photos/5424640/pexels-photo-5424640.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2500");
     padding: 3rem 5rem;
     @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Hanalei+Fill&family=Righteous&display=swap');

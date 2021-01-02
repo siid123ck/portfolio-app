@@ -1,8 +1,11 @@
+@import "../variables";
 .contact{
     &_main{
         // background-color: rgba(245, 245, 245, 0.609);
         background-size: cover;
         padding: 3rem 2rem;
+        background-image:linear-gradient(to right bottom, rgba($primary-color-2, .75), rgba($primary-color-2, .75)),
+         url("contact.jpg");
     }
     text-transform: uppercase;
     justify-content: space-around;
@@ -46,7 +49,7 @@
                 text-transform: lowercase;
                
                 &:hover{
-                    color: rgba(0, 0, 0, 0.561);
+                    color: rgba($text-color, 0.561);
                     text-decoration: underline;
                 }
                 
@@ -69,7 +72,7 @@
      //icons styles
     & .fa{
     // font-size: 2.5rem;
-    color: white;
+    color: $white;
     border-radius: 50%;
     height: 3.5rem;
     width: 3.5rem;

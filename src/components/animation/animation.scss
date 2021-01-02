@@ -1,3 +1,4 @@
+@import "../variables.scss";
 .animation{
     // background-color: brown;
     width: 100%;
@@ -25,9 +26,19 @@
      width: 100%;  
      flex-basis: 100%;
      position: relative;
+     background-size: cover;
     &-1{
-        background-size: cover;
-        background-image: url("https://images.pexels.com/photos/257923/pexels-photo-257923.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2500");
+        background-image: linear-gradient(to right bottom, rgba($primary-color-1, .6),rgba($primary-color-1, .12)),
+         url("https://images.pexels.com/photos/257923/pexels-photo-257923.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2500");
+    }
+    &-2{
+        background-image:   linear-gradient(to right bottom, rgba($primary-color-1, .6),rgba($primary-color-1, .12)),
+
+         url("https://images.pexels.com/photos/4456604/pexels-photo-4456604.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2500");
+    }
+    &-3{
+        background-image: linear-gradient(to right bottom, rgba($primary-color-1, .6),rgba($primary-color-1, .12)),
+         url("https://images.pexels.com/photos/3184450/pexels-photo-3184450.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1500");
     }
 
      & img{  
@@ -39,7 +50,7 @@
 
      &_caption{
          position: absolute;
-         width: 30%;
+         width: 40%;
          display: flex;
          flex-direction: column;
          justify-content: space-around;
@@ -49,7 +60,7 @@
          &-2{
              left: 5%;
              & h4{
-                 color: white;
+                 color: $white;
                  font-size: 1.8rem !important;
              }
          }
@@ -58,10 +69,10 @@
              transform: translate(-40%, -50%);
          }
          &_header{
-             background-color: grey;
+             background-color: $secondary-color-2;
              width: fit-content;
              margin: 0 auto;
-             color: white;
+             color: $white;
              padding: 1rem;
              border-radius: 10%;
              margin-bottom: 2rem;
@@ -81,7 +92,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(50%);
-        background-color: rgba(0, 0, 0, 0.349);
+        background-color: rgba($secondary-color-3, 0.349);
         color: white;
         font-size: 2rem;
         font-weight: 100;
@@ -90,7 +101,7 @@
         border: none;
         margin: 1rem;
         &:hover{
-            background-color: rgba(0, 0, 0, 0.149);
+            background-color: rgba($secondary-color-3, 0.149);
         }
         &--left{
           left: 0;  
@@ -115,15 +126,15 @@
         &-indicator{
             height: 1rem;
             width: 1rem;
-            background-color: rgba($color: #000000, $alpha: 0.479);
+            background-color: rgba($text-color,  0.479);
             border-radius: 50%;
-            border: 1px solid rgba(0, 0, 0, 0.479);
+            border: 1px solid rgba(rgba($secondary-color-3,  0.879), 0.479);
 
             &:not(:last-child){
                 margin-right: 0.6rem;
             }
             &-current{
-                background-color: white;
+                background-color: $white;
             }
         }
     }

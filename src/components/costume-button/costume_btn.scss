@@ -1,3 +1,4 @@
+@import "../variables.scss";
 .btn{
     border: none;
     border-radius: 10rem;
@@ -16,23 +17,23 @@
         font-size: 1.5rem;
     }
     &--white{
-        background-color: rgba(0, 0, 0, 0.712);
-        color: white;
-        border: 3px solid white;
+        background-color: rgba($secondary-color-3, 0.812);
+        color: $white;
+        border: 3px solid $white;
         &:hover{
-            color: rgba(0, 0, 0, 0.712);
-            background-color: white; 
+            color: rgba($secondary-color-3, 0.812);
+            background-color: $white; 
           
         }
     }
     &--black{
-        color: rgba(0, 0, 0, 0.712);
-        background-color: white;
-        border: 2px solid rgba(0, 0, 0, 0.712);
+        color: rgba($secondary-color-3, 0.812);
+        background-color: $white;
+        border: 2px solid rgba($secondary-color-3, 0.812);
         &:hover{
-            border: 3px solid #fff;
-            background-color: rgba(0, 0, 0, 0.712);
-            color: white;
+            border: 3px solid $white;
+            background-color: rgba($secondary-color-3, 0.812);
+            color: $white;
         }
     }
     &:focus{

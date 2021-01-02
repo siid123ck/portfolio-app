@@ -1,3 +1,4 @@
+@import "../variables.scss";
 .form{
     margin: 0 auto;
     width: 80%;
@@ -18,20 +19,22 @@
         width: 100%;
         padding: 1rem 2rem;
         border: none;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.797);
+        color: $text-color;
+        border-bottom: 1px solid rgba($text-color, 0.797);
         &-textarea{
             height: 8rem;
         }
         &:focus{
-            border-bottom: 3px solid rgb(30, 128, 0);
+            border-bottom: 3px solid $green;
             outline: none;
-            box-shadow: 0 .5rem 1rem rgba(black,  .2);
+            box-shadow: 0 .5rem 1rem rgba($text-color,  .2);
             &:invalid{
-                border-bottom: 3px solid rgb(255, 94, 0);
+                border-bottom: 3px solid $invalid-color;
             }
         }
         &::placeholder{
             text-transform: uppercase;
+            color: $text-color;
         }
         &:placeholder-shown + .form-label{
             display: none;
