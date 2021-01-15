@@ -27,6 +27,7 @@
      flex-basis: 100%;
      position: relative;
      background-size: cover;
+     background-position: center;
     &-1{
         background-image: linear-gradient(to right bottom, rgba($primary-color-1, .6),rgba($primary-color-1, .12)),
          url("https://images.pexels.com/photos/257923/pexels-photo-257923.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2500");
@@ -57,7 +58,20 @@
          top: 50%;
          right: 5%;
          transform: translateY(-50%);
+         &-1{
+            @media only screen and (max-width: 600px) {
+                font-size: 3.3rem;
+                left: 50%;
+                transform: translate(-40%, -50%);
+                color: brown;
+              }
+         }
          &-2{
+             @media only screen and (max-width: 600px) {
+                font-size: 1.3rem;
+                left: 50%;
+                transform: translate(-40%, -50%);
+              }
              left: 5%;
              & h4{
                  color: $white;
