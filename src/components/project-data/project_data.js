@@ -7,4 +7,4 @@ const PROJECT_DATA = [
     {id:6, title:"ludo game", imgUrl:`${process.env.PUBLIC_URL + "img/project_6.png"}`, tools:["css(sass)","javascript", "flex-box", "grid"], altr:"nc", projectUrl:""}  
 ]
 
-export default PROJECT_DATA;
+export default PROJECT_DATA;  

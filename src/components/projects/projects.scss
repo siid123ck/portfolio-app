@@ -3,7 +3,7 @@
     padding: 3rem 2rem;
     display: grid;
     grid-gap: 3rem ;
-    background-color: rgba($secondary-color-1, 0.549);
+    background-color: rgba($secondary-color-1, 0.749);
     // grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr)) ;
     grid-template-columns: repeat(3, 1fr) ;
     @media only screen and (max-width: 800px) {
