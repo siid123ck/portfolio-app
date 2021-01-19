@@ -22,8 +22,10 @@ export default function Project() {
                            <li key={index} className="list-item list-item-tools">{item}</li>
                        ))}
                    </ul>
+                   <a href={p.projectUrl}>
 
-                   <Button btn="view website" btn_style="btn btn--white"/>
+                   <Button  btn="view website" btn_style="btn btn--white"/>
+                   </a>
                </div>
            </div>
          ))}

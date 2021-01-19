@@ -101,6 +101,7 @@
 
 //form
 .contact_form{
+    position: relative;
     @import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Righteous&display=swap');
     font-family: 'Righteous', cursive;
     &_heading{
@@ -110,3 +111,20 @@
         font-size: 1.5rem;
     }
 }
+
+.arrow-top{
+    z-index: 23;
+    font-size: 4rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    & a{
+        text-decoration: none;
+        color: white;
+
+        &:hover{
+         color: rgba(white, .7);
+        }
+    }
+ }

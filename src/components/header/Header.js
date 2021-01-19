@@ -3,7 +3,7 @@ import "./header.scss";
 
 export default function Header(){
     return (
-        <div className="header">
+        <div className="header" id="gototop">
             <div className="logo">
                 <div className="logo_main">
                   <span className="logo_circle">Siid <i></i> </span>

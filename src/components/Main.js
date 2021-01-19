@@ -35,6 +35,7 @@ export default class  Main extends Component {
                 <Project/>
                 <Contact changeHandler={this.changeHandler} name={name} password={password}
                 email={email} submitHandler={this.submitHandler} />
+               
             </div>
         )
     }

@@ -44,8 +44,12 @@ export default function Contact({changeHandler, ...others}) {
       name="message" label="message" id="message" placeholder="your message" type="text"  className="form-input form-input-textarea"/>
       <Button btn="submit" type="btn" btn_style="btn btn--black"  />
       </form>
+     <div className="arrow-top"> 
+             <a href="#gototop">
+                    <i  className="fa fa-angle-up"></i>
+             </a> 
+         </div>
      </div>
-
       </div>  
     )
 }
