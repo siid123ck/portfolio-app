@@ -7,7 +7,7 @@ export default function Header(){
             <div className="logo">
                 <div className="logo_main">
                   <span className="logo_circle">Siid <i></i> </span>
-                  <span className="logo_heading">Sharma</span>
+                  <span className="logo_heading">Sir</span>
               </div>
               <div className="logo_title">
                   <h1>Siid Sharma</h1>
