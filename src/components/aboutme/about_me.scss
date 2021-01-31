@@ -52,6 +52,8 @@
     // color: white;
     @import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap');
     font-family: 'Hanalei Fill', cursive;  
+    @import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Righteous&display=swap');
+    font-family: 'Righteous', cursive;
     word-spacing: 2px;
     letter-spacing: 1px;
     font-size: 115%;
@@ -70,7 +72,8 @@
     }
     &-education{
         grid-column: 9/span 3;  
-        
+        letter-spacing: normal;
+        word-spacing: normal;
         @media screen and (max-width:800px) {
             grid-column: 2/-2;
         }
@@ -98,7 +101,7 @@
     url("https://images.pexels.com/photos/5424640/pexels-photo-5424640.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2500");
     padding: 3rem 5rem;
     @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Hanalei+Fill&family=Righteous&display=swap');
+    font-family: 'Amiri', serif;
     font-weight: 700;
     text-transform: capitalize;
-    font-family: 'Amiri', serif;
 }

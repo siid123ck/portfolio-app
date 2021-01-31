@@ -26,6 +26,13 @@
          margin-left: 1rem;
          padding-top: .4rem;
          position: relative;
+         width: 4rem;
+         height: 4rem;
+         z-index: 52;
+        
+         &:hover{
+             cursor: pointer;
+         }
          &-item{ 
              background-color: $text-color;
              height: .4rem;
@@ -72,7 +79,7 @@
         display: none;
     }
     &-toggler:checked ~ &_background{
-    transform: scale(280);
+    transform: scale(40, 155);
     display: block;
     }
     // &-toggler:checked ~ &_background{
@@ -123,7 +130,6 @@
    top: 1rem;
    right: 1rem;
    background-color: $white;
-   z-index: 52;
     }
 .nav-toggler:checked ~ .menu_icon div:nth-child(3){
     transform: rotate(-45deg);
@@ -131,7 +137,6 @@
     top: 1rem;
     right: 1rem;
     background-color: $white;
-    z-index: 52;
     }
 
     //logo

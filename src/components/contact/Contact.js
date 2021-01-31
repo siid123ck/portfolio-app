@@ -36,12 +36,14 @@ export default function Contact({changeHandler, ...others}) {
      <form className="form" action="#" onSubmit={others.submitHandler}>
       <Input changeHandler={changeHandler} value={others.name}
        name="name" label="name" id="name" placeholder="full name" type="text" className="form-input"  />
-      <Input changeHandler={changeHandler} value={others.password}
+      {/* <Input changeHandler={changeHandler} value={others.password}
        name="password" label="password" id="password" type="password" placeholder="password" className="form-input" />
+     */}
       <Input changeHandler={changeHandler} value={others.email}
       name="email" label="email" id="email" placeholder="your email" type="email"  className="form-input"/>
       <Input changeHandler={changeHandler} value={others.message}
       name="message" label="message" id="message" placeholder="your message" type="text"  className="form-input form-input-textarea"/>
+    
       <Button btn="submit" type="btn" btn_style="btn btn--black"  />
       </form>
      <div className="arrow-top"> 

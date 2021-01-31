@@ -5,10 +5,10 @@ export default function Header(){
     return (
         <div className="header" id="gototop">
             <div className="logo">
-                <div className="logo_main">
+                {/* <div className="logo_main">
                   <span className="logo_circle">Siid <i></i> </span>
-                  <span className="logo_heading">Sir</span>
-              </div>
+                  <span className="logo_heading">Shirma</span>
+                </div> */}
               <div className="logo_title">
                   <h1>Siid Sharma</h1>
                   <span>Web Developer</span> 
