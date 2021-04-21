@@ -23,10 +23,11 @@ export default function Contact({changeHandler, ...others}) {
             <div className="contact_media">
                 <h2 className="contact_heading">find me on</h2>
                 <div className="contact_media-item">
-                   <a href="jk"><i className="fa fa-lg fa-facebook"></i></a>
-                   <a href="jk"><i className="fa fa-lg fa-instagram"></i></a>
-                   <a href="jk"><i className="fa fa-lg fa-twitter"></i></a>
-                   <a href="jk"><i className="fa fa-lg fa-linkedin"></i></a>
+                   <a href="https://www.facebook.com/ck.sharma.9659"><i className="fa fa-lg fa-facebook"></i></a>
+                   {/* <a href="https://www.instagram.com/cksharmaa17/"><i className="fa fa-lg fa-instagram"></i></a> */}
+                   <a href="https://mobile.twitter.com/SiidSharma2"><i className="fa fa-lg fa-twitter"></i></a>
+                   <a href="https://www.linkedin.com/in/siid-sharma-989263181/"><i className="fa fa-lg fa-linkedin"></i></a>
+                   <a href="https://github.com/siid123ck/"><i className="fa fa-lg fa-github"></i></a>
                 </div>
             </div>
 
@@ -44,7 +45,7 @@ export default function Contact({changeHandler, ...others}) {
       <Input changeHandler={changeHandler} value={others.message}
       name="message" label="message" id="message" placeholder="your message" type="text"  className="form-input form-input-textarea"/>
     
-      <Button btn="submit" type="btn" btn_style="btn btn--black"  />
+      <Button btn="submit" type="submit" btn_style="btn btn--black"  />
       </form>
      <div className="arrow-top"> 
              <a href="#gototop">

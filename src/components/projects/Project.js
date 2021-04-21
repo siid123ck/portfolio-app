@@ -24,7 +24,7 @@ export default function Project() {
                    </ul>
                    <a target="_blank" rel="noreferrer" href={p.projectUrl}>
 
-                   <Button  btn="view website" btn_style="btn btn--white"/>
+                   <Button type="button"  btn="view website" btn_style="btn btn--white"/>
                    </a>
                </div>
            </div>

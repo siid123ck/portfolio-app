@@ -59,6 +59,7 @@
     left: 50%;
     opacity: 0;
     width: 0;
+    display: none;
     transform: translate(-50%, -50%);
     padding: 1rem;
 
@@ -79,7 +80,8 @@
         display: none;
     }
     &-toggler:checked ~ &_background{
-    transform: scale(40, 155);
+    transform: scale(40, 175);
+    position: fixed;
     display: block;
     }
     // &-toggler:checked ~ &_background{
@@ -89,7 +91,7 @@
         opacity: 1;
         width: 100%;
         // background-color: rgba($secondary-color-3, .9);
-
+        display: block;
         color: $white;
     }
     &_item{
@@ -126,16 +128,14 @@
     }
 .nav-toggler:checked ~ .menu_icon div:nth-child(1){
    transform: rotate(45deg);
-   position: absolute;
-   top: 1rem;
-   right: 1rem;
+   position: fixed;
+ 
    background-color: $white;
     }
 .nav-toggler:checked ~ .menu_icon div:nth-child(3){
     transform: rotate(-45deg);
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+    position: fixed;
+   
     background-color: $white;
     }
 

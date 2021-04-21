@@ -35,7 +35,7 @@
     &-2{
         background-image:   linear-gradient(to right bottom, rgba($primary-color-1, .6),rgba($primary-color-1, .12)),
 
-         url("https://images.pexels.com/photos/4456604/pexels-photo-4456604.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2500");
+         url("https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     }
     &-3{
         background-image: linear-gradient(to right bottom, rgba($primary-color-1, .6),rgba($primary-color-1, .12)),
@@ -74,7 +74,6 @@
               }
              left: 5%;
              & h4{
-                 color: $white;
                  font-size: 1.8rem !important;
              }
          }

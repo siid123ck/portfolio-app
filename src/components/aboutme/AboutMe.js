@@ -25,7 +25,7 @@ export default function AboutMe() {
                    <ul className="sub_list">
                        <li className="sub_list-item">Front-end languages:HTML5, advance CSS(Sass/Scss), Javascript</li>
                        <li className="sub_list-item">Front-end frameworks and libraries: Bootstrap, JQuery, Bootstrap, React JS</li>
-                       <li className="sub_list-item">backend-language: Node.js</li>
+                       <li className="sub_list-item">backend-language: Node.js, Express, PHP, Laravel</li>
                        <li className="sub_list-item">python</li>
                    </ul>
                    </li>
@@ -36,6 +36,7 @@ export default function AboutMe() {
            </div>
            <div className="experience">
                <h2 className="tail tail-md">work experieces</h2>
+               <h3> <strong>Full stack developer</strong> at <a style={{padding:"0"}} target="_blank" rel="noreferrer" href="https://virtupharma.com.au/"> Virtupharma</a> </h3> 
                <ul className="list list-experience" >
                    <li className="list-item list-item-experience">building Responsive Websites to represent the restaurants using HTML, CSS and Bootstrap and Ract JS. </li>
                    <li className="list-item list-item-experience">Impressive websites using CSS(sass) Flexbox and grid</li>
@@ -43,6 +44,8 @@ export default function AboutMe() {
                    <li className="list-item list-item-experience">E-commerce Website using React and redux(currently working)</li>
                    <li className="list-item list-item-experience">Javascript games to demonstrates solving skills</li>
                    <li className="list-item list-item-experience">Use of advance UI components like Modal, Carousel, dropdown, collapse, card, grid list, data-table and many more</li>
+                   <li className="list-item list-item-experience">Work with both relational and non-relation database </li>
+                   <li className="list-item list-item-experience">Work in backend using node JS and Laravel</li>
                </ul>
            </div>
         </div>
