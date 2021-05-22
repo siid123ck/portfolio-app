@@ -6,7 +6,7 @@ $primary-color-1:rgb(241, 241, 241);
 $primary-color-2:rgb(246, 246, 246);
 $primary-color-3:rgb(251, 251, 251);
 $secondary-color-1:rgb(211, 211, 211);
-$secondary-color-2:rgb(128, 128, 128);
+$secondary-color-2:rgb(211, 211, 211);
 $secondary-color-3:rgb(28, 28, 28);
 $text-color:#000;
 
@@ -20,4 +20,13 @@ $text-color:#000;
 // $text-color:#fff;
 
 // addtional variables
+
+//ocean 
+$primary-color-1:rgba(66, 90, 195, 0.9945);
+$primary-color-2:rgba(66, 90, 195, 0.745);
+$primary-color-3:rgba(66, 90, 195, 0.545);
+$secondary-color-1:rgba(33, 42, 165, 0.579);
+$secondary-color-2:rgba(33, 42, 165, 0.779);
+$secondary-color-3:rgba(33, 42, 165, 0.979);
+$text-color:#fff;
 $invalid-color:rgb(255, 94, 0);

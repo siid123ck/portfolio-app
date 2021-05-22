@@ -13,14 +13,14 @@ export default function Animation() {
                       <div className="carousel_item_caption">
                         <h1 className="carousel_item_caption_header">who i am</h1>
                         <h4>Web developer with hands-on experience of designing, developing, and implementing applications and solutions using a range of technologies and programming languages. Seeking to
-                             leverage broad development experience in a challenging role as front-end developer.</h4>
+                             leverage broad development experience in a challenging role as full stack developer.</h4>
                          <a href="#aboutme"><Button btn="read about me" btn_style="btn btn--black btn-sm"/></a> 
                       </div>
                    </div>
                    <div className="carousel_item carousel_item-2">
                    <div className="carousel_item_caption carousel_item_caption-2">
                         <h1 className="carousel_item_caption_header">view my projects </h1>
-                        <h4>i can build small single-page website to multi-page ecommerce website using range of technologies like flex-box, grid, animation, carousel etc </h4>
+                        <h4>i can build small, single-page website to multi-page ecommerce applications using range of technologies</h4>
                          <a href="#projects"><Button btn="projects" btn_style="btn btn--black btn-sm"/></a> 
                    </div> 
                    </div>
