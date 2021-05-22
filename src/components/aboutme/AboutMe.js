@@ -32,20 +32,23 @@ export default function AboutMe() {
                    <li className="list-item list-item-skill">database: mongodb, mysql</li>
                    <li className="list-item list-item-skill">datastucture and algorithm</li>
                    <li className="list-item list-item-skill">Json api and ajax</li>
+                   <li className="list-item list-item-skill">Docker Basic</li>
+                   <li className="list-item list-item-skill">AWS practitioner</li>
                </ul>
            </div>
            <div className="experience">
                <h2 className="tail tail-md">work experieces</h2>
                <h3> <strong>Full stack developer</strong> at <a style={{padding:"0"}} target="_blank" rel="noreferrer" href="https://virtupharma.com.au/"> Virtupharma</a> </h3> 
                <ul className="list list-experience" >
-                   <li className="list-item list-item-experience">building Responsive Websites to represent the restaurants using HTML, CSS and Bootstrap and Ract JS. </li>
-                   <li className="list-item list-item-experience">Impressive websites using CSS(sass) Flexbox and grid</li>
-                   <li className="list-item list-item-experience">Proficient knowledge of adjusting components using flexbox and grid to make code clear and easier </li>
-                   <li className="list-item list-item-experience">E-commerce Website using React and redux(currently working)</li>
-                   <li className="list-item list-item-experience">Javascript games to demonstrates solving skills</li>
+                   <li className="list-item list-item-experience">developing front-end and backend application architecture</li>
+                   <li className="list-item list-item-experience">building  front-end Websites using HTML5, SASS(CSS), Javascript, ReactJS, ReduxJS </li>
                    <li className="list-item list-item-experience">Use of advance UI components like Modal, Carousel, dropdown, collapse, card, grid list, data-table and many more</li>
-                   <li className="list-item list-item-experience">Work with both relational and non-relation database </li>
-                   <li className="list-item list-item-experience">Work in backend using node JS and Laravel</li>
+                   <li className="list-item list-item-experience">Ensuring the applications are responsive to all devices, work in all browser</li>
+                   <li className="list-item list-item-experience">developing backend applications using node JS(prefered) and Laravel</li>
+                   <li className="list-item list-item-experience">building APIs and integrating them in application to minimize the work</li>
+                   <li className="list-item list-item-experience">Working with both relational(with laravel) and non-relation database(with NodeJS) </li>
+                   <li className="list-item list-item-experience">Working with AWS to deploy, configure, maintain the application </li>
+                   <li className="list-item list-item-experience">developing Javascript games to demonstrates solving skills</li>
                </ul>
            </div>
         </div>

@@ -58,6 +58,9 @@
          top: 50%;
          right: 5%;
          transform: translateY(-50%);
+         @media only screen and (max-width:600px){
+             left: 37%;
+         }
          &-1{
             @media only screen and (max-width: 600px) {
                 font-size: 3.3rem;
