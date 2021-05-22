@@ -46,7 +46,7 @@ export default function AboutMe() {
                    <li className="list-item list-item-experience">Ensuring the applications are responsive to all devices, work in all browser</li>
                    <li className="list-item list-item-experience">developing backend applications using node JS(prefered) and Laravel</li>
                    <li className="list-item list-item-experience">building APIs and integrating them in application to minimize the work</li>
-                   <li className="list-item list-item-experience">Working with both relational(with laravel) and non-relation database(with NodeJS) </li>
+                   <li className="list-item list-item-experience">Working with both relational(with laravel) and non-relational database(with NodeJS) </li>
                    <li className="list-item list-item-experience">Working with AWS to deploy, configure, maintain the application </li>
                    <li className="list-item list-item-experience">developing Javascript games to demonstrates solving skills</li>
                </ul>
